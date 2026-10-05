@@ -395,14 +395,20 @@ Show me "git status" and "git log --oneline -3" afterwards.
 ### Prompt 4: Make my change (describe what you want)
 
 ```
+"Sample - For adding a new team member to contributor list"
 My ticket is <<ticket id and title>>.
 Look at how other teams did the same kind of work first: list the files under src/app/(homepage)/contributors on upstream/dev and tell me the pattern they followed.
-Then, for my team (<<team name>>), create my page inside its own folder: src/app/(homepage)/contributors/<<team-name>>/page.tsx, with the data in a _lib/contributors.ts file in the same folder.
-My team members are:
+Then, for my team (<<team name>>), create my page inside its own folder: src/app/(homepage)/contributors/zendor-condor/page.tsx, with the data in a _lib/contributors.ts file in the same folder.
+My team member(s) are:
 <<Full name | handle | role>>
-<<Full name | handle | role>>
-Match the style of the existing pages. Use a Next.js <Link> for any button that goes to another page (never a <button> inside a <Link>). Do not touch any file outside my folder.
+Match the style of the existing pages. Do not touch any file outside my folder.
 When done, show me the list of files you created or changed.
+```
+
+```
+"Sample - For changing a text or character in the contributor page"
+My ticket is <<ticket id and title>>.
+In this [BASE_URL]/contributors/zedu-condor contributors page, edit the "People" text in "The People Behind Zedu" to "Team"
 ```
 
 ### Prompt 5: Check everything works, then commit and push
